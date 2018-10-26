@@ -6,4 +6,8 @@ class PolyTreeNode
     @value = value
   end
 
+  def parent
+    @parent
+  end
+
 end
