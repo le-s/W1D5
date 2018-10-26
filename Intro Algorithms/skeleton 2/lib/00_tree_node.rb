@@ -10,6 +10,10 @@ class PolyTreeNode
     @parent
   end
 
+  def parent=(node)
+    @parent = node
+  end
+
   def children
     @children
   end
@@ -17,5 +21,7 @@ class PolyTreeNode
   def value
     @value
   end
+
+
 
 end
