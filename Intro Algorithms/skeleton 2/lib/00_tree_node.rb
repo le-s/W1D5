@@ -14,4 +14,8 @@ class PolyTreeNode
     @children
   end
 
+  def value
+    @value
+  end
+
 end
