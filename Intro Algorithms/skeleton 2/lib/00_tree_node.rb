@@ -51,6 +51,7 @@ class PolyTreeNode
     unless self.children.empty?
       self.children.each do |child|
         found_node = child.dfs(target_value)
+        return found_node if found_node
       end
     end
 
