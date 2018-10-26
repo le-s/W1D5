@@ -10,4 +10,8 @@ class PolyTreeNode
     @parent
   end
 
+  def children
+    @children
+  end
+
 end
