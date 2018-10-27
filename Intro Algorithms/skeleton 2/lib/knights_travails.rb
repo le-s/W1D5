@@ -3,11 +3,12 @@ require_relative "00_tree_node"
 class KnightPathFinder
 
   def initialize(pos)
+    @start_pos = pos
     @visited_positions = [pos]
   end
 
   def self.build_move_tree(target_pos)
-    queue = [@visited_positions.first]
+    queue = [@start_pos]
     until queue.empty?
       square = queue.shift
       return square if square == target_pos
@@ -31,6 +32,10 @@ class KnightPathFinder
     all_moves = KnightPathFinder.valid_moves(pos)
     all_moves.reject! { |square| @visited_positions.include?(square) }
     @visited_positions += all_moves
+  end
+
+  def find_path
+
   end
 
 end
